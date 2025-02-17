@@ -64,9 +64,17 @@ def contact():
 def portfolio():
     return render_template('portfolio.html')
 
+@app.route('/portfolio_item')
+def portfolio_item():
+    return render_template('portfolio-item.html')
+
 @app.route('/blog')
 def blog():
     return render_template('blog.html')
+
+@app.route('/blog_post')
+def blog_post():
+    return render_template('blog-post.html')
 
 @app.route('/ui_elements')
 def ui_elements():
